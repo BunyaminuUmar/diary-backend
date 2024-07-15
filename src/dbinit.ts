@@ -14,7 +14,7 @@ async function initializeDatabase() {
     try {
         const conn = await connection;
         await conn.query(createPostsTable);
-        console.log('Posts table created successfully.');
+        //console.log('Posts table created successfully.');
     } catch (err) {
         console.error('Error creating posts table:', err);
     }

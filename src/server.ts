@@ -26,10 +26,10 @@ app.use('/posts', postRouter);
 connection
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`Server is running on port ${PORT}`);
+            //console.log(`Server is running on port ${PORT}`);
         });
     })
     .catch((err) => {
-        console.error('Failed to connect to the database:', err.message);
+        // console.error('Failed to connect to the database:', err.message);
         process.exit(1);
     });
